@@ -1,0 +1,25 @@
+{
+  "name": "kuvapalo",
+  "version": "1.0.0",
+  "description": "Upload and serve images",
+  "main": "index.js",
+  "author": "Tamás Kertész",
+  "license": "MIT",
+  "scripts": {
+    "public": "cd views && yarn start",
+    "server": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn public\""
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.0",
+    "node-sass": "^4.7.2",
+    "sharp": "^0.19.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
