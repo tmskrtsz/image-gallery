@@ -45,7 +45,7 @@ class App extends Component {
 
   render() {
     return ([
-      <header key="1">
+      <header key="0">
         <div className="header-inner">
           <div className="logo">
             <img src={logo} alt="Kuvapalo logo" />
@@ -69,7 +69,7 @@ class App extends Component {
           </div>
         </div>
       </header>,
-      <div key="2" className="wrapper">
+      <div key="1" className="wrapper">
         <Gallery
           status={this.state.status}
         />

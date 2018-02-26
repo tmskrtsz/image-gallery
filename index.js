@@ -99,11 +99,11 @@ app.delete('/api/delete/:id', (req, res) => {
 		`uploads/thumbnails/thumb_${req.params.id}`
 	];
 
-	function deleteImages(images, cb) {
+	const deleteImages = (images, cb) => {
 		var i = images.length;
 
-		images.forEach(function(imagepath){
-			fs.unlink(imagepath, function(err) {
+		images.forEach((imagePath) => {
+			fs.unlink(imagePath, (err) => {
 				i--;
 				if (err) {
 					cb(err);
